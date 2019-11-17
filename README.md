@@ -44,10 +44,9 @@ Por otro lado, para facilitar la lectura de los datos, quería mostrar cierta in
 
 ## Referencias  
 Alguna de las páginas consultadas para el desarrollo de la práctica han sido:
-- Repositorio D3.js (https://github.com/d3)
-- Galerias de ejemplos (https://d3js.org/ y https://www.d3-graph-gallery.com/index.html)
-- Libreria para Regresion Lineal (https://github.com/simple-statistics/simple-statistics)
-- Leyendas D3.js (https://d3-legend.susielu.com y https://observablehq.com/@d3/color-legend)
-
+- Repositorio D3.js (https://github.com/d3)  
+- Galerias de ejemplos (https://d3js.org/ y https://www.d3-graph-gallery.com/index.html)  
+- Libreria para Regresion Lineal (https://github.com/simple-statistics/simple-statistics)  
+- Leyendas D3.js (https://d3-legend.susielu.com y https://observablehq.com/@d3/color-legend)  
 - Tooltips D3.js (https://github.com/VACLab/d3-tip)
 
