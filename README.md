@@ -33,7 +33,7 @@ A la hora de integrar _Leaflet_ con _d3.js v5_ he tenido muchos problemas para p
   pointer-events: none;
 }
 ```
-Para resolver este problema he tenido que sobreescribir esta propiedad en mi hoja de estilos.
+Para resolver este problema he tenido que sobrescribir esta propiedad en mi hoja de estilos.
 ```css
 .region{
     pointer-events: visible !important;
