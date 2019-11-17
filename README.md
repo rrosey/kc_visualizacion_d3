@@ -41,7 +41,7 @@ Para resolver este problema he tenido que sobrescribir esta propiedad en mi hoja
 ```
 No sé si hay otra forma mas correcta de resolver este inconveniente entre _d3.js_ y _Leaflet_.
 
-Por otro lado, para facilitar la lectura de los datos, quería mostrar cierta información mediante tooltips. En la libreria d3.js parece que no hay ninguna funcionalidad especifica para ello, pero encontré algunas librerías desarrolladas por terceros (https://github.com/VACLab/d3-tip). He intentado utilizar esta libreria pero no he conseguido cargar el js desde la página de inicio, como se muestra en algunos ejemplos de uso de la version para _d3.js v3_.
+Por otro lado, para facilitar la lectura de los datos, quería mostrar cierta información mediante tooltips. En la libreria d3.js parece que no hay ninguna funcionalidad especifica para ello, pero encontré algunas librerías desarrolladas por terceros (https://github.com/cgav/d3-tip). He intentado utilizar esta libreria pero no he conseguido cargar el js desde la página de inicio, como se muestra en algunos ejemplos de uso de la version para _d3.js v3_.
 
 ## Referencias  
 Alguna de las páginas consultadas para el desarrollo de la práctica han sido:
@@ -49,5 +49,5 @@ Alguna de las páginas consultadas para el desarrollo de la práctica han sido:
 - Galerias de ejemplos (https://d3js.org/ y https://www.d3-graph-gallery.com/index.html)  
 - Libreria para Regresion Lineal (https://github.com/simple-statistics/simple-statistics)  
 - Leyendas D3.js (https://d3-legend.susielu.com y https://observablehq.com/@d3/color-legend)  
-- Tooltips D3.js (https://github.com/VACLab/d3-tip)
+- Tooltips D3.js (https://github.com/cgav/d3-tip)
 
