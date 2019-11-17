@@ -13,11 +13,19 @@ Las dos gráficas mostrarán la información relativa al barrio seleccionado en 
 El dataset utilizado es un fichero json adaptado para la práctica, con informacion geogragráfica de los barrios en formato geojson junto con la información necesaria para el resto de gráficas.
 
 ## Desarrollo
-La página web desarrado consta de varios ficheros:
-- index.html
-- main.css
-- map-d3-leaflet.js
+La página web desarrada consta de varios ficheros:
+- index.html: página principal, con la estructura para cargar los gráficos
+- main.css: hoja de estilos para definir la estructura de la página y colores de los gráficos.
+- map-d3-leaflet.js: son las funciones de javascript programadas para leer los datos, y repesentarlos haciendo uso de la librería _d3.js_.  
+A continuación se muestra una captura donde se pueden visualizar los tres gráficos del dashboard desarrllado.
+
+![dashboard](img/web.png)
+
+1. La visualización del mapa de _d3.js_ se ha integrado con la librería _Leaflet_, con el ojetivo de poder visualizar un mapa base junto con el de barrios de Mardrid (en nuestro caso un mapa proporcionado por CartoDB)
+1. Las gráficas 2 y 3 se actualizan con la información relativa a un barrio, seleccionandolo al pasar el puntero por por encima de uno de los barrios del mapa superior. El eje Y (del gráfico 2) es dinámico para permitir visualizar mejor los valores, sin embargo, en el caso de la gráfica de la Regresion Lineal se ha mantenido estático para que se puedan comparar mejor las rampas de la RL entre distintos barrios.
 
 ## Estudio y Dudas
 
 ## Referencias
+Algun de las páginas consultadas para el desarrollo de la práctica han sido:
+- 
