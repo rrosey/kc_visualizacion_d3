@@ -1,5 +1,5 @@
 # Exploración y Visualización de Datos con D3.js
-Práctica de Exploración y Visualización de Datos con D3 del Bootcamp Big Data &amp; Machine Learning de KeepCoding.
+Práctica de Exploración y Visualización de Datos con D3 del _Bootcamp Big Data & Machine Learning_ de [KeepCoding](https://keepcoding.io/es/).
 
 ## Objetivo
 Esta práctica tiene como ojetivo desarrollar un pequeño dashboard mediante el uso de librería **D3.js**. El dahsboard se compone de tres gráficas que representarán:
@@ -10,10 +10,13 @@ Esta práctica tiene como ojetivo desarrollar un pequeño dashboard mediante el 
 Las dos gráficas mostrarán la información relativa al barrio seleccionado en el mapa superior.
 
 ### Dataset
-El dataset utilizado es un fichero json adaptado para la práctica en el que viene la informacion de geogragrafica de los barrios en formato geojson junto con la información necesaria para el resto de gráficas.
-
+El dataset utilizado es un fichero json adaptado para la práctica, con informacion geogragráfica de los barrios en formato geojson junto con la información necesaria para el resto de gráficas.
 
 ## Desarrollo
+La página web desarrado consta de varios ficheros:
+- index.html
+- main.css
+- map-d3-leaflet.js
 
 ## Estudio y Dudas
 
