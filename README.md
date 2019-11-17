@@ -25,14 +25,14 @@ A continuación se muestra una captura donde se pueden visualizar los tres gráf
 1. La visualización del mapa de _d3.js_ se ha integrado con la librería _Leaflet_, con el ojetivo de poder visualizar un mapa base junto con el de barrios de Mardrid (en nuestro caso un mapa proporcionado por CartoDB)
 1. Las gráficas 2 y 3 se actualizan con la información relativa a un barrio, seleccionandolo al pasar el puntero por por encima de uno de los barrios del mapa superior. El eje Y (del gráfico 2) es dinámico para permitir visualizar mejor los valores, sin embargo, en el caso de la gráfica de la Regresion Lineal se ha mantenido estático para que se puedan comparar mejor las rampas de la RL entre distintos barrios.
 
-## Estudio y Dudas
-A la hora de integrar leaflet con d3.js v5 he tenido muchos problemas para poder detectar los eventos del raton desde la capa de _d3.js_. Parece ser que con las últimas versiones de la librería leaflet deshabilita mediante css la interacción con las capas
+## Estudio y dudas
+A la hora de integrar leaflet con d3.js v5 he tenido muchos problemas para poder detectar los eventos del raton desde la capa de _d3.js_. Parece ser que con las últimas versiones de _Leaflet_ se deshabilita la interacción con las capas mediante css
 ```css
 .leaflet-pane > svg path {
   pointer-events: none;
 }
 ```
-La única forma que se me ha ocurrido de resolver este problema es sobreescribiendo esta propiedad en mi hoja de estilos:
+Para resolver este problema he tenido que sobreescribit esta propiedad en mi hoja de estilos.
 ```css
 .region{
     pointer-events: visible !important;
@@ -40,13 +40,14 @@ La única forma que se me ha ocurrido de resolver este problema es sobreescribie
 ```
 No sé si hay otra forma mas correcta de resolver este inconveniente entre _d3.js_ y _Leaflet_.
 
-
-
-
-Para facilitar la lectura de los datos quería mostrar cierta información mediante tooltips. En la libreria d3.js parece que no hay ninguna funcionalidad especifica para ello, pero encontré algunas librerías desarrolladas por terceros.  
+Por otro lado, para facilitar la lectura de los datos, quería mostrar cierta información mediante tooltips. En la libreria d3.js parece que no hay ninguna funcionalidad especifica para ello, pero encontré algunas librerías desarrolladas por terceros (https://github.com/VACLab/d3-tip). He intentado utilizar esta libreria pero no he conseguido cargar el js desde la página de inicio, como se muestra en algunos ejemplos de uso de la version para _d3.js v3_.
 
 ## Referencias  
 Alguna de las páginas consultadas para el desarrollo de la práctica han sido:
+- Repositorio D3.js (https://github.com/d3)
+- Galerias de ejemplos (https://d3js.org/ y https://www.d3-graph-gallery.com/index.html)
+- Libreria para Regresion Lineal (https://github.com/simple-statistics/simple-statistics)
+- Leyendas D3.js (https://d3-legend.susielu.com y https://observablehq.com/@d3/color-legend)
 
-- fgd
+- Tooltips D3.js (https://github.com/VACLab/d3-tip)
 
