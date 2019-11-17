@@ -17,7 +17,8 @@ La página web desarrada consta de varios ficheros:
 - index.html: página principal, con la estructura para cargar los gráficos
 - main.css: hoja de estilos para definir la estructura de la página y colores de los gráficos.
 - map-d3-leaflet.js: son las funciones de javascript programadas para leer los datos, y repesentarlos haciendo uso de la librería _d3.js_.  
-A continuación se muestra una captura donde se pueden visualizar los tres gráficos del dashboard desarrllado.
+
+A continuación se muestra una captura donde se pueden visualizar los tres gráficos del dashboard desarrollado.
 
 ![dashboard](img/web.png)
 
@@ -25,7 +26,27 @@ A continuación se muestra una captura donde se pueden visualizar los tres gráf
 1. Las gráficas 2 y 3 se actualizan con la información relativa a un barrio, seleccionandolo al pasar el puntero por por encima de uno de los barrios del mapa superior. El eje Y (del gráfico 2) es dinámico para permitir visualizar mejor los valores, sin embargo, en el caso de la gráfica de la Regresion Lineal se ha mantenido estático para que se puedan comparar mejor las rampas de la RL entre distintos barrios.
 
 ## Estudio y Dudas
+A la hora de integrar leaflet con d3.js v5 he tenido muchos problemas para poder detectar los eventos del raton desde la capa de _d3.js_. Parece ser que con las últimas versiones de la librería leaflet deshabilita mediante css la interacción con las capas
+```css
+.leaflet-pane > svg path {
+  pointer-events: none;
+}
+```
+La única forma que se me ha ocurrido de resolver este problema es sobreescribiendo esta propiedad en mi hoja de estilos:
+```css
+.region{
+    pointer-events: visible !important;
+}
+```
+No sé si hay otra forma mas correcta de resolver este inconveniente entre _d3.js_ y _Leaflet_.
 
-## Referencias
-Algun de las páginas consultadas para el desarrollo de la práctica han sido:
-- 
+
+
+
+Para facilitar la lectura de los datos quería mostrar cierta información mediante tooltips. En la libreria d3.js parece que no hay ninguna funcionalidad especifica para ello, pero encontré algunas librerías desarrolladas por terceros.  
+
+## Referencias  
+Alguna de las páginas consultadas para el desarrollo de la práctica han sido:
+
+- fgd
+
